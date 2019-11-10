@@ -1,0 +1,5 @@
+file = pd.read_csv('train.tsv','\t')
+这个会把非分隔符的\t也理解成分隔符
+file = pd.read_csv('train.tsv',sep='\t') 
+加上关键字就不会出现上述问题了
+
