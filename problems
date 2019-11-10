@@ -2,4 +2,9 @@ file = pd.read_csv('train.tsv','\t')
 这个会把非分隔符的\t也理解成分隔符
 file = pd.read_csv('train.tsv',sep='\t') 
 加上关键字就不会出现上述问题了
+制表符“/t”
+
+TSV是用制表符（Tab,'\t'）作为字段值的分隔符
+CSV是用半角逗号（','）作为字段值的分隔符（Comma）
+Python的csv模块准确的讲应该叫做dsv模块，因为它实际上是支持范式的分隔符分隔值文件（DSV，delimiter-separated values）
 
